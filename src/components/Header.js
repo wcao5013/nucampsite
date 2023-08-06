@@ -7,7 +7,6 @@ const Header = () => {
           <NavbarBrand href='/'>
             <img src={NucampLogo} alt='nucamp logo' />
           </NavbarBrand>
-
       </Navbar>
     )
 }
