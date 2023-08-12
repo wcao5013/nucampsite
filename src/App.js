@@ -2,11 +2,14 @@
 // import { Container, Navbar, NavbarBrand } from 'reactstrap';
 // // import NucampLogo from './app/assets/img/logo.png';
 // import CampsiteCard from './features/counter/campsites/CampsiteCard';
+// import { CAMPSITES } from './app/shared/CAMPSITES';
+// import CampsitesList from './features/counter/campsites/CampsitesList';
 import Header from './components/Header';
 import Footer from './components/Footer';
-// import CampsitesList from './features/counter/campsites/CampsitesList';
 import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
-// import { CAMPSITES } from './app/shared/CAMPSITES';
+import { Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import ContactPage from './pages/ContactPage';
 import './App.css';
 
 function App() {
@@ -14,7 +17,11 @@ function App() {
     <div className="App">
       
       <Header/>
-      <CampsitesDirectoryPage/>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='contact' element={<ContactPage />} />
+          <Route path='directory' element={<CampsitesDirectoryPage />}/>
+        </Routes>
       <Footer/>
     </div>
   );
