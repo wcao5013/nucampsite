@@ -6,7 +6,6 @@ import { useState } from 'react';
 
 const CampsitesDirectoryPage = () => {
     const [campsiteId, setCampsiteId] = useState(0);
-
     const selectedCampsite = selectCampsiteById(campsiteId);
     
     return (
