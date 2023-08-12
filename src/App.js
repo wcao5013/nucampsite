@@ -6,7 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 // import CampsitesList from './features/counter/campsites/CampsitesList';
 import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
-import { CAMPSITES } from './app/shared/CAMPSITES';
+// import { CAMPSITES } from './app/shared/CAMPSITES';
 import './App.css';
 
 function App() {
