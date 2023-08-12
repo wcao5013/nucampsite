@@ -3,7 +3,8 @@ import CampsiteDetail from '../features/campsites/CampsiteDetail';
 import CampsitesList from '../features/counter/campsites/CampsitesList';
 import { selectRandomCampsite } from '../features/counter/campsites/campsitesSlice';
 
-Const CampsitesDirectoryPage = () => {
+const CampsitesDirectoryPage = () => {
+    const selectedCampsite = selectRandomCampsite();
     return (
         <Container>
             <Row>

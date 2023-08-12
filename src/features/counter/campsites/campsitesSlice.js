@@ -1,4 +1,4 @@
-import CAMPSITES from '../src/app/shared';
+import CAMPSITES from '/Users/wancao/Documents/nucamp/NucampFolder/3-React/nucampsite/src/app/shared';
 
 export const selectAllCampsites = () => {
     return CAMPSITES;

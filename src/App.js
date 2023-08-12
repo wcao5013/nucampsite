@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       
       <Header/>
-      <CampsitesList/>
+      <CampsitesDirectoryPage/>
       <Footer/>
     </div>
   );

@@ -3,6 +3,7 @@ import { Col, Row } from "reactstrap";
 import CampsiteCard from "./CampsiteCard";
 
  const CampsitesList = () => {
+    const campsites = selectAllCampsites;
     return (
         <Row className="ms-auto">
             {CAMPSITES.map((campsite) => {
