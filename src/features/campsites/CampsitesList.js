@@ -4,6 +4,7 @@ import CampsiteCard from "./CampsiteCard";
 
  const CampsitesList = () => {
     const campsites = selectAllCampsites();
+
     return (
         <Row className='ms-auto'>
             {campsites.map((campsite) => {
@@ -16,20 +17,6 @@ import CampsiteCard from "./CampsiteCard";
             }
         </Row>
     )
-    
-    // const campsites = selectAllCampsites();
-    // return (
-    //     <Row className="ms-auto">
-    //         {campsites.map((campsite) => {
-    //         return (
-    //             <Col md='5' className='m-4' key={campsite.id} onClick={() => setCampsiteId(campsite.id)}>
-    //                 <CampsiteCard campsite={campsite} />
-    //             </Col>
-    //         );
-    //     })}
-    //     </Row>
-    // )
-
  
  }
 
