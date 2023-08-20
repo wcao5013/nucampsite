@@ -31,7 +31,7 @@ const ContactForm = () => {
                 <FormGroup row>
                     <Label htmlFor='firstName' md='2'>First Name</Label>
                     <Col md='10'>
-                        <Field className='form-control' name='firtName'/>
+                        <Field className='form-control' name='firstName'/>
                         <ErrorMessage name='firstName'>
                             {(msg) => <p className='text-danger'>{msg}</p>}
                         </ErrorMessage>

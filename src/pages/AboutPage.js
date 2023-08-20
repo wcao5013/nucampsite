@@ -1,6 +1,7 @@
 import { Col, Row, Container, Card, CardBody, CardHeader } from 'reactstrap';
 import DisplayList from '../features/display/DisplayList';
 import PartnersList from '../features/partners/PartnersList';
+
 const AboutPage = () => {
     return (
         <Container>
