@@ -1,4 +1,16 @@
 import CAMPSITES from '/Users/wancao/Documents/nucamp/NucampFolder/3-React/nucampsite/src/app/shared/CAMPSITES.js';
+import { createSlice } from '@reduxjs/toolkit';
+
+const initialState = {
+    campsitesArray: CAMPSITES
+}
+
+const campsitesSlice = createSlice({
+    name: 'campsites',
+    initialState
+})
+
+export const  campsitesReducer = campsitesSlice.reducer
 
 export const selectAllCampsites = () => {
     return CAMPSITES;
