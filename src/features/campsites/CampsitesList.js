@@ -1,7 +1,7 @@
 import { selectAllCampsites } from "./campsitesSlice";
 import { Col, Row } from "reactstrap";
 import CampsiteCard from "./CampsiteCard";
-import { UseSelector, useSelector } from "react-redux/es/hooks/useSelector";
+import { useSelector } from "react-redux/es/hooks/useSelector";
 
  const CampsitesList = () => {
     const campsites = useSelector(selectAllCampsites)

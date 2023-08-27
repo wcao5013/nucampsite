@@ -42,4 +42,4 @@ const CAMPSITES = [
     }
 ];
 
-export default CAMPSITES;
+export default CAMPSITES
