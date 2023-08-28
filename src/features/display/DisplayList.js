@@ -7,7 +7,7 @@ import AnimatedDisplayCard from './AnimatedDisplayCard';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 
 const DisplayList = () => {
-    const items = useSelector((state) => [selectFeaturedCampsite(), selectFeaturedPromotion(), selectFeaturedPartner()]);
+    const items = useSelector((state) => [selectFeaturedCampsite(state), selectFeaturedPromotion(state), selectFeaturedPartner(state)]);
     console.log('display items:', items)
     
     return (
