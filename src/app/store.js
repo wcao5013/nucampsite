@@ -5,6 +5,7 @@ import { commentsReducer } from '../features/comments/commentsSlice';
 import { partnerReducer } from '../features/partners/partnersSlice';
 import { promotionsReducer } from '../features/promotions/promotionsSlice';
 import { userReducer } from '../features/user/userSlice';
+import logger from 'redux-logger';
 
 export const store = configureStore({
   reducer: {
@@ -14,4 +15,5 @@ export const store = configureStore({
     promotions: promotionsReducer,
     user: userReducer
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat([logger])
 });
