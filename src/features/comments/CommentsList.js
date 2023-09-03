@@ -32,9 +32,9 @@ const CommentsList = ({campsiteId}) => {
         <Col md='5' className='m-1'>
                 <h4>Comments</h4>
                 {comments.map((comment) => {
-                    return <Comment key={comment.id} comment={comment} />
+                    return <Comment key={comment.id} comment={comment}/>
                 })}
-                <CommentForm>{campsiteId}</CommentForm>
+                <CommentForm campsiteId={campsiteId}></CommentForm>
             </Col>
         )
 

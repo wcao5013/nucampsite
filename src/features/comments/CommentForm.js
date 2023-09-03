@@ -20,6 +20,8 @@ const CommentForm = ({campsiteId}) => {
         }
         console.log(comment)
         dispatch(postComment(comment))
+        console.log('comment form:', campsiteId)
+        console.log('comment object: ', comment)
         setModalOpen(false)
     }
 
